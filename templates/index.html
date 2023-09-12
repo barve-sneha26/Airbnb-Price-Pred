@@ -1,0 +1,40 @@
+<html>
+<head> <title> Price Predictor by Barve </title>
+<style> * {font-size:25px; font-family:Algerian; </style>
+</head>
+<body>
+
+<center>
+    <h1> Fill in the details </h1>
+    <form action="/check" method="POST">
+
+    <h2> Neighbourhood Group </h2>
+    <input type="radio" name="neighbourhood_group" value= "1">Manhattan</input>
+    <input type="radio" name="neighbourhood_group" value= "2">Brooklyn</input>
+    <input type="radio" name="neighbourhood_group" value= "3">Queens</input>
+    <input type="radio" name="neighbourhood_group" value= "4">Bronx</input>
+    <input type="radio" name="neighbourhood_group" value= "5">Staten Island </input>
+
+
+    <h2> Room Type </h2>
+    <input type="radio" name="room_type" value= "1"> Entire House </input>
+    <input type="radio" name="room_type" value= "2"> Private Room </input>
+    <input type="radio" name="room_type" value= "3"> Shared Room </input>
+    <input type="radio" name="room_type" value= "4"> Hotel Room </input>
+
+    <h2> Reviews </h2>
+    <input type="number" name="number_of_reviews" required>
+
+    <h2> Host Listings Count </h2>
+    <input type="number" name="calculated_host_listings_count" required>
+
+    <br><br>
+
+    <input type="submit" value="Check">
+    </form>
+    {{ msg }}
+</center>
+</body>
+</html>
+
+
